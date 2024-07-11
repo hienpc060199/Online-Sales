@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bai 2</title>
+	<link rel="stylesheet" type="text/css" href="bai2.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="bai2.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+
+	<!--Link Icon-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body id="demo">
+
+<!--PHAN 1-->	
+	<div id="container">
+		<div class="gobars">
+			<div class="title">
+				<a href="#demo" onclick="goBar()"><span>GO BARS</span></a>
+			</div>
+
+			<div class="menu">
+				<div class="mgright"><a href="bai2.html" class="home">HOME</a></div>
+				<div class="mgright"><a href="shop.html" class="shop">SHOP</a></div>
+				<div class="mgright"><a href="about.html" class="about">ABOUT</a></div>
+				<div class="mggh"><a href="wheretobuy.html" class="whereToBuy">WHERE TO BUY</a></div>
+				<div class="gh">
+					<a aria-label="Cart with 0 items" class="_1gJ4T TVS20 _3tSTQ">
+						<div style="padding-bottom:12px; visibility:visible">
+							<svg width="100%" height="100%" viewBox="5.7 0 105.5 126.1">
+								<path d="M99.8 28.4c0-1.2-0.9-2-2.1-2h-15c0 3.2 0 7.6 0 8.2 0 1.5-1.2 2.6-2.6 2.9 -1.5 0.3-2.9-0.9-3.2-2.3 0-0.3 0-0.3 0-0.6 0-0.9 0-4.7 0-8.2H40.1c0 3.2 0 7.3 0 8.2 0 1.5-1.2 2.9-2.6 2.9 -1.5 0-2.9-0.9-3.2-2.3 0-0.3 0-0.3 0-0.6 0-0.6 0-5 0-8.2h-15c-1.2 0-2 0.9-2 2L8.3 124c0 1.2 0.9 2.1 2.1 2.1h96.3c1.2 0 2.1-0.9 2.1-2.1L99.8 28.4z">
+								</path>
+
+								<path d="M59.1 5.9c-2.9 0-2 0-2.9 0 -2 0-4.4 0.6-6.4 1.5 -3.2 1.5-5.9 4.1-7.6 7.3 -0.9 1.8-1.5 3.5-1.8 5.6 0 0.9-0.3 1.5-0.3 2.3 0 1.2 0 2.1 0 3.2 0 1.5-1.2 2.9-2.6 2.9 -1.5 0-2.9-0.9-3.2-2.3 0-0.3 0-0.3 0-0.6 0-1.2 0-2.3 0-3.5 0-3.2 0.9-6.4 2-9.4 1.2-2.3 2.6-4.7 4.7-6.4 3.2-2.9 6.7-5 11.1-5.9C53.5 0.3 55 0 56.7 0c1.5 0 2.9 0 4.4 0 2.9 0 5.6 0.6 7.9 1.8 2.6 1.2 5 2.6 6.7 4.4 3.2 3.2 5.3 6.7 6.4 11.1 0.3 1.5 0.6 3.2 0.6 4.7 0 1.2 0 2.3 0 3.2 0 1.5-1.2 2.6-2.6 2.9s-2.9-0.9-3.2-2.3c0-0.3 0-0.3 0-0.6 0-1.2 0-2.6 0-3.8 0-2.3-0.6-4.4-1.8-6.4 -1.5-3.2-4.1-5.9-7.3-7.3 -1.8-0.9-3.5-1.8-5.9-1.8C61.1 5.9 59.1 5.9 59.1 5.9L59.1 5.9z">	
+								</path>
+								<text x="58.5" y="77" dy=".35em" text-anchor="middle" class="_1INsc">0</text>
+							</svg>
+						</div>
+					</a>				
+				</div>
+			</div>
+		</div>	
+
+		<div id="carouselExampleInterval" class="carousel slide background" data-ride="carousel">
+		  <div class="carousel-inner">
+		    <div class="carousel-item active" data-interval="10000">
+		        <p class="d-block w-100 giua">TRY OUR NEWEST FLAVOR</p>
+		    </div>
+		    <div class="carousel-item" data-interval="2000">
+		    	<p class="d-block w-100 giua">FREE SHIPPING ON ORDERS OVER $40</p>
+		    </div>
+		    <div class="carousel-item">
+		     	 <p class="d-block w-100 giua">ORDER 2 BOXES AND SAVE $20</p>
+		    </div>
+		  </div>
+		</div>
+	</div>	
+
+
+<!--PHAN 2-->
+	<div id="anh">
+		<div class="img">
+			<img src="./img/9c608a_2450b4ac278b4d3580d106297175bffc_mv2_d_6381_3294_s_4_2.webp">
+		</div>
+
+		<div class="shopnow">
+			<div class="eat">
+				<h2>EAT WELL</h2>
+				<h2>LIVE WELL</h2>
+			</div>
+
+			<div class="thanhngang"></div>
+
+			<div class="noidung">
+				<p>I'm paragraph. Click here to add your<br> own text and edit me. I'm a great place for<br> you to tell a story and let users know<br> a little more about you.</p>	
+			</div>
+
+			<div class="button">
+				<a href="#">Shop Now</a>
+			</div>
+		</div>
+	</div>
+
+<!--PHAN 3-->
+	<div id="slide2">
+		<div>
+			<div class="our">			
+				<h5>Our Products</h5>
+			</div>
+
+			<div class="thep">
+				<p>I'm a paragraph. Click here to add your own text<br> and edit me. It’s easy.</p>
+			</div>
+		</div>
+		
+		<div>
+			<ul id="flexiselDemo1"> 
+			    <li class="subLi" id="li1">
+			    	<a href="sanPhamHome.html" class="asubli">
+			    		<img src="./img/anh1.webp" class="anh1"/>
+			    	</a>
+				    	<div>				    		
+				    		<p><a href="sanPhamHome.html" class="asubli">I'm a Product</a></p>
+				    		<div>
+				    			<span><a href="sanPhamHome.html" class="asubli">15₫</a></span>
+				    		</div>				    		
+				    	</div>			    	
+			    	<div class="hover">QUICK VIEW</div>
+			    </li>
+			    <li class="subLi" id="li3">
+			    	<a href="sanPhamHome2.html" class="asubli">
+			    		<img src="./img/anh3.webp" class="anh2"/>
+			    	</a>
+				    	<div>				    		
+				    		<p><a href="sanPhamHome2.html" class="asubli">I'm a Product</a></p>
+				    		<div>
+				    			<span><a href="sanPhamHome2.html" class="asubli">15₫</a></span>
+				    		</div>				    		
+				    	</div>			    	
+			    	<div class="hover">QUICK VIEW</div>
+			    </li>   
+			    <li class="subLi" id="li5">
+			    	<a href="sanPhamHome3.html" class="asubli">
+			    		<img src="./img/anh5.webp" class="anh3"/>
+			    	</a>
+				    	<div>				    		
+				    		<p><a href="sanPhamHome3.html" class="asubli">I'm a Product</a></p>
+				    		<div>
+				    			<span><a href="sanPhamHome3.html" class="asubli">15₫</a></span>
+				    		</div>				    		
+				    	</div>			    	
+			    	<div class="hover">QUICK VIEW</div>
+			    </li>     
+			    <li class="subLi" id="li7">
+			    	<a href="sanPhamHome4.html" class="asubli">
+			    		<img src="./img/anh7.webp" class="anh4"/>
+			    	</a>
+				    	<div>				    		
+				    		<p><a href="sanPhamHome4.html" class="asubli">I'm a Product</a></p>
+				    		<div>
+				    			<span><a href="sanPhamHome4.html" class="asubli">15₫</a></span>
+				    		</div>				    		
+				    	</div>			    	
+			    	<div class="hover">QUICK VIEW</div>
+			    </li> 
+			    <li class="subLi" id="li9">
+			    	<a href="sanPhamHome5.html" class="asubli">
+			    		<img src="./img/anh9.webp" class="anh5"/>
+			    	</a>
+				    	<div>				    		
+				    		<p><a href="sanPhamHome5.html" class="asubli">I'm a Product</a></p>
+				    		<div>
+				    			<span><a href="sanPhamHome5.html" class="asubli">15₫</a></span>
+				    		</div>				    		
+				    	</div>			    	
+			    	<div class="hover">QUICK VIEW</div>
+			    </li>
+			    <li class="subLi" id="li11">
+			    	<a href="sanPhamHome6.html" class="asubli">
+			    		<img src="./img/anh11.webp" class="anh6"/>
+			    	</a>
+				    	<div>				    		
+				    		<p><a href="sanPhamHome6.html" class="asubli">I'm a Product</a></p>
+				    		<div>
+				    			<span><a href="sanPhamHome6.html" class="asubli">15₫</a></span>
+				    		</div>				    		
+				    	</div>			    	
+			    	<div class="hover">QUICK VIEW</div>
+			    </li>
+			    <li class="subLi" id="li13">
+			    	<a href="sanPhamHome7.html" class="asubli">
+			    		<img src="./img/anh13.webp" class="anh7"/>
+			    	</a>
+				    	<div>				    		
+				    		<p><a href="sanPhamHome7.html" class="asubli">I'm a Product</a></p>
+				    		<div>
+				    			<span><a href="sanPhamHome7.html" class="asubli">15₫</a></span>
+				    		</div>				    		
+				    	</div>			    	
+			    	<div class="hover">QUICK VIEW</div>
+			    </li>
+			    <li class="subLi" id="li15">
+			    	<a href="sanPhamHome8.html" class="asubli">
+			    		<img src="./img/anh15.webp" class="anh8"/>
+			    	</a>
+				    	<div>				    		
+				    		<p><a href="sanPhamHome8.html" class="asubli">I'm a Product</a></p>
+				    		<div>
+				    			<span><a href="sanPhamHome8.html" class="asubli">15₫</a></span>
+				    		</div>				    		
+				    	</div>			    	
+			    	<div class="hover">QUICK VIEW</div>
+			    </li>
+			    <li class="subLi" id="li17">
+			    	<a href="sanPhamHome9.html" class="asubli">
+			    		<img src="./img/anh17.webp" class="anh9"/>
+			    	</a>
+				    	<div>				    		
+				    		<p><a href="sanPhamHome9.html" class="asubli">I'm a Product</a></p>
+				    		<div>
+				    			<span><a href="sanPhamHome9.html" class="asubli">15₫</a></span>
+				    		</div>				    		
+				    	</div>			    	
+			    	<div class="hover">QUICK VIEW</div>
+			    </li>
+			    <li class="subLi" id="li19">
+			    	<a href="sanPhamHome10.html" class="asubli">
+			    		<img src="./img/anh19.webp" class="anh10"/>
+			    	</a>
+				    	<div>				    		
+				    		<p><a href="sanPhamHome10.html" class="asubli">I'm a Product</a></p>
+				    		<div>
+				    			<span><a href="sanPhamHome10.html" class="asubli">15₫</a></span>
+				    		</div>				    		
+				    	</div>			    	
+			    	<div class="hover">QUICK VIEW</div>
+			    </li>
+			    <li class="subLi" id="li21">
+			    	<a href="sanPhamHome11.html" class="asubli">
+			    		<img src="./img/anh21.webp" class="anh11"/>
+			    	</a>
+				    	<div>				    		
+				    		<p><a href="sanPhamHome11.html" class="asubli">I'm a Product</a></p>
+				    		<div>
+				    			<span><a href="sanPhamHome11.html" class="asubli">15₫</a></span>
+				    		</div>				    		
+				    	</div>			    	
+			    	<div class="hover">QUICK VIEW</div>
+			    </li>
+			    <li class="subLi" id="li23">
+			    	<a href="sanPhamHome12.html" class="asubli">
+			    		<img src="./img/anh23.webp" class="anh12"/>
+			    	</a>
+				    	<div>				    		
+				    		<p><a href="sanPhamHome12.html" class="asubli">I'm a Product</a></p>
+				    		<div>
+				    			<span><a href="sanPhamHome12.html" class="asubli">15₫</a></span>
+				    		</div>				    		
+				    	</div>			    	
+			    	<div class="hover">QUICK VIEW</div>
+			    </li>
+			</ul>
+			<div class="clearout"></div> 
+
+<!--SLIDES SAN PHAM-->  		
+  		<script type="text/javascript">
+
+  				$(document).ready(function()
+  					{
+						$("#flexiselDemo1").flexisel();
+
+						$(".subLi").mouseenter(function()
+						{
+							let id = parseInt((this.id).substr(2));
+							// console.log(typeof id);
+							let id2 = id+1;
+							$("#"+ this.id +" img").attr({"src": "./img/anh"+ id2 +".webp"});
+						});
+
+						$(".subLi").mouseleave(function()
+						{
+							let id = (this.id).substr(2);
+							$("#"+ this.id +" img").attr({"src": "./img/anh"+ id +".webp"});
+						});					
+  					});
+			</script>
+		</div>
+
+
+	</div>
+
+<!--PHAN 4-->
+	<div id="content">
+		<div class="cuc1">
+			<img src="./img/anh25.webp">
+
+			<div class="oder">
+				<div class="oderright">
+					<div class="eat">
+						<h5>Order 2 Boxes</h5>
+						<h4>SAVE 20%</h4>
+					</div>
+
+					<div class="thanhngang"></div>
+
+					<div class="noidung">
+						<p>I’m a paragraph . Double click here or click Edit Text to<br> add some text of your own or to change the font. Tell<br> your visitors a bit about your services.</p>	
+					</div>
+
+					<div class="button">
+						<a href="#">Shop Now</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="cuc1">
+			<div class="oder bgoder2">
+				<div class="oderleft">
+					<div class="eat2">
+						<h5>Try Our</h5>
+						<h4>NEWEST FLAVOR</h4>
+					</div>
+
+					<div class="thanhngang"></div>
+
+					<div class="noidung">
+						<p>I’m a paragraph . Double click here or click Edit Text to<br> add some text of your own or to change the font. Tell<br> your visitors a bit about your services.</p>	
+					</div>
+
+					<div class="button">
+						<a href="#">Shop Now</a>
+					</div>
+				</div>
+			</div>
+
+			<img src="./img/anh26.webp">
+		</div>
+	</div>
+
+
+<!--PHAN 5-->
+
+	<div id="sign">
+		<div class="imgsign">
+			<img src="./img/anh27.webp">
+		</div>
+
+		<div class="signup">
+			<div class="eat2">
+				<h5>Sign up for Our Newsletter</h5>
+				<h4>FOR SOME HEALTHY TIPS</h4>
+			</div>
+
+			<div class="button mid">
+				<a href="#">Sign Up</a>
+			</div>
+		</div>
+	</div>
+
+
+<!--PHAN 6-->
+
+	<div id="goBar">
+		<div class="gobar">
+			<div class="our">			
+				<h5>Go Bar Gallery</h5>
+			</div>
+
+			<div class="thep">
+				<p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or<br> double click me to add your own content and make changes to the font.</p>
+			</div>
+		</div>
+		<!--PHAN HIEN THI-->
+		<div class="slideanh">
+			<div class="margintop">
+				<div class="hoverImg anh01">
+					<img src="./img/anh28.jpg">
+					<div class="hoverAnh">
+                        <div class="mgRightSvg">
+                            <svg width="24" height="21" viewBox="0 0 24 21">
+                                <path fill="none" fill-rule="evenodd" stroke="#FFF" d="M17 1c-1.592.1-3.011 1.017-5.003 3C10.008 2.006 8.592 1.1 7 1 4.004.8 1 4 1 7c0 3.066.518 4.195 2 6.003C3.951 14.164 11.903 20 11.997 20c.094 0 7.022-5.952 8.003-7 1.592-1.798 3-3.03 3-6 0-3-3.004-6.2-6-6z"></path>
+                            </svg>                                
+                        </div>
+                        <div class="mgRight2">2</div>
+                        <div class="mgRightSvg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 22">
+                                <path fill="none" fill-rule="evenodd" stroke="#FFF" d="M1 12C.35 7.553 3.969 3.525 8 2c4.552-1.652 10.4-.066 13 4 1.82 2.795 1.43 6.95 0 10 .65 1.652 1.306 3.334 2 5-2.17-.553-4.223-1.575-6-2-6.502 2.795-14.96.75-16-7z"></path>
+                            </svg>                                
+                        </div>
+                        <div class="mgRight2">0</div>
+                    </div>
+				</div>
+
+				<div class="hoverImg anh02">
+					<img src="./img/anh29.jpg">
+					<div class="hoverAnh">
+                        <div class="mgRightSvg">
+                            <svg width="24" height="21" viewBox="0 0 24 21">
+                                <path fill="none" fill-rule="evenodd" stroke="#FFF" d="M17 1c-1.592.1-3.011 1.017-5.003 3C10.008 2.006 8.592 1.1 7 1 4.004.8 1 4 1 7c0 3.066.518 4.195 2 6.003C3.951 14.164 11.903 20 11.997 20c.094 0 7.022-5.952 8.003-7 1.592-1.798 3-3.03 3-6 0-3-3.004-6.2-6-6z"></path>
+                            </svg>                                
+                        </div>
+                        <div class="mgRight2">2</div>
+                        <div class="mgRightSvg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 22">
+                                <path fill="none" fill-rule="evenodd" stroke="#FFF" d="M1 12C.35 7.553 3.969 3.525 8 2c4.552-1.652 10.4-.066 13 4 1.82 2.795 1.43 6.95 0 10 .65 1.652 1.306 3.334 2 5-2.17-.553-4.223-1.575-6-2-6.502 2.795-14.96.75-16-7z"></path>
+                            </svg>                                
+                        </div>
+                        <div class="mgRight2">0</div>
+                    </div>
+				</div>
+
+				<div class="hoverImg anh03">
+					<img src="./img/anh30.jpg">
+					<div class="hoverAnh">
+                        <div class="mgRightSvg">
+                            <svg width="24" height="21" viewBox="0 0 24 21">
+                                <path fill="none" fill-rule="evenodd" stroke="#FFF" d="M17 1c-1.592.1-3.011 1.017-5.003 3C10.008 2.006 8.592 1.1 7 1 4.004.8 1 4 1 7c0 3.066.518 4.195 2 6.003C3.951 14.164 11.903 20 11.997 20c.094 0 7.022-5.952 8.003-7 1.592-1.798 3-3.03 3-6 0-3-3.004-6.2-6-6z"></path>
+                            </svg>                                
+                        </div>
+                        <div class="mgRight2">2</div>
+                        <div class="mgRightSvg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 22">
+                                <path fill="none" fill-rule="evenodd" stroke="#FFF" d="M1 12C.35 7.553 3.969 3.525 8 2c4.552-1.652 10.4-.066 13 4 1.82 2.795 1.43 6.95 0 10 .65 1.652 1.306 3.334 2 5-2.17-.553-4.223-1.575-6-2-6.502 2.795-14.96.75-16-7z"></path>
+                            </svg>                                
+                        </div>
+                        <div class="mgRight2">0</div>
+                    </div>
+				</div>
+
+				<div class="hoverImg anh04">
+					<img src="./img/anh31.jpg">
+					<div class="hoverAnh">
+                        <div class="mgRightSvg">
+                            <svg width="24" height="21" viewBox="0 0 24 21">
+                                <path fill="none" fill-rule="evenodd" stroke="#FFF" d="M17 1c-1.592.1-3.011 1.017-5.003 3C10.008 2.006 8.592 1.1 7 1 4.004.8 1 4 1 7c0 3.066.518 4.195 2 6.003C3.951 14.164 11.903 20 11.997 20c.094 0 7.022-5.952 8.003-7 1.592-1.798 3-3.03 3-6 0-3-3.004-6.2-6-6z"></path>
+                            </svg>                                
+                        </div>
+                        <div class="mgRight2">2</div>
+                        <div class="mgRightSvg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 22">
+                                <path fill="none" fill-rule="evenodd" stroke="#FFF" d="M1 12C.35 7.553 3.969 3.525 8 2c4.552-1.652 10.4-.066 13 4 1.82 2.795 1.43 6.95 0 10 .65 1.652 1.306 3.334 2 5-2.17-.553-4.223-1.575-6-2-6.502 2.795-14.96.75-16-7z"></path>
+                            </svg>                                
+                        </div>
+                        <div class="mgRight2">0</div>
+                    </div>
+				</div>
+			</div>
+			
+			<div  class="marginbottom">
+				<div class="hoverImg anh05">
+					<img src="./img/anh32.jpg">
+					<div class="hoverAnh">
+                        <div class="mgRightSvg">
+                            <svg width="24" height="21" viewBox="0 0 24 21">
+                                <path fill="none" fill-rule="evenodd" stroke="#FFF" d="M17 1c-1.592.1-3.011 1.017-5.003 3C10.008 2.006 8.592 1.1 7 1 4.004.8 1 4 1 7c0 3.066.518 4.195 2 6.003C3.951 14.164 11.903 20 11.997 20c.094 0 7.022-5.952 8.003-7 1.592-1.798 3-3.03 3-6 0-3-3.004-6.2-6-6z"></path>
+                            </svg>                                
+                        </div>
+                        <div class="mgRight2">2</div>
+                        <div class="mgRightSvg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 22">
+                                <path fill="none" fill-rule="evenodd" stroke="#FFF" d="M1 12C.35 7.553 3.969 3.525 8 2c4.552-1.652 10.4-.066 13 4 1.82 2.795 1.43 6.95 0 10 .65 1.652 1.306 3.334 2 5-2.17-.553-4.223-1.575-6-2-6.502 2.795-14.96.75-16-7z"></path>
+                            </svg>                                
+                        </div>
+                        <div class="mgRight2">0</div>
+                    </div>
+				</div>
+				<div class="hoverImg anh06">
+					<img src="./img/anh33.jpg">
+					<div class="hoverAnh">
+                        <div class="mgRightSvg">
+                            <svg width="24" height="21" viewBox="0 0 24 21">
+                                <path fill="none" fill-rule="evenodd" stroke="#FFF" d="M17 1c-1.592.1-3.011 1.017-5.003 3C10.008 2.006 8.592 1.1 7 1 4.004.8 1 4 1 7c0 3.066.518 4.195 2 6.003C3.951 14.164 11.903 20 11.997 20c.094 0 7.022-5.952 8.003-7 1.592-1.798 3-3.03 3-6 0-3-3.004-6.2-6-6z"></path>
+                            </svg>                                
+                        </div>
+                        <div class="mgRight2">2</div>
+                        <div class="mgRightSvg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 22">
+                                <path fill="none" fill-rule="evenodd" stroke="#FFF" d="M1 12C.35 7.553 3.969 3.525 8 2c4.552-1.652 10.4-.066 13 4 1.82 2.795 1.43 6.95 0 10 .65 1.652 1.306 3.334 2 5-2.17-.553-4.223-1.575-6-2-6.502 2.795-14.96.75-16-7z"></path>
+                            </svg>                                
+                        </div>
+                        <div class="mgRight2">0</div>
+                    </div>
+				</div>
+				<div class="hoverImg anh07">
+					<img src="./img/anh34.jpg">
+					<div class="hoverAnh">
+                        <div class="mgRightSvg">
+                            <svg width="24" height="21" viewBox="0 0 24 21">
+                                <path fill="none" fill-rule="evenodd" stroke="#FFF" d="M17 1c-1.592.1-3.011 1.017-5.003 3C10.008 2.006 8.592 1.1 7 1 4.004.8 1 4 1 7c0 3.066.518 4.195 2 6.003C3.951 14.164 11.903 20 11.997 20c.094 0 7.022-5.952 8.003-7 1.592-1.798 3-3.03 3-6 0-3-3.004-6.2-6-6z"></path>
+                            </svg>                                
+                        </div>
+                        <div class="mgRight2">2</div>
+                        <div class="mgRightSvg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 22">
+                                <path fill="none" fill-rule="evenodd" stroke="#FFF" d="M1 12C.35 7.553 3.969 3.525 8 2c4.552-1.652 10.4-.066 13 4 1.82 2.795 1.43 6.95 0 10 .65 1.652 1.306 3.334 2 5-2.17-.553-4.223-1.575-6-2-6.502 2.795-14.96.75-16-7z"></path>
+                            </svg>                                
+                        </div>
+                        <div class="mgRight2">0</div>
+                    </div>
+				</div>
+				<div class="hoverImg anh08   ">
+					<img src="./img/anh35.jpg">
+					<div class="hoverAnh">
+                        <div class="mgRightSvg">
+                            <svg width="24" height="21" viewBox="0 0 24 21">
+                                <path fill="none" fill-rule="evenodd" stroke="#FFF" d="M17 1c-1.592.1-3.011 1.017-5.003 3C10.008 2.006 8.592 1.1 7 1 4.004.8 1 4 1 7c0 3.066.518 4.195 2 6.003C3.951 14.164 11.903 20 11.997 20c.094 0 7.022-5.952 8.003-7 1.592-1.798 3-3.03 3-6 0-3-3.004-6.2-6-6z"></path>
+                            </svg>                                
+                        </div>
+                        <div class="mgRight2">2</div>
+                        <div class="mgRightSvg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 22">
+                                <path fill="none" fill-rule="evenodd" stroke="#FFF" d="M1 12C.35 7.553 3.969 3.525 8 2c4.552-1.652 10.4-.066 13 4 1.82 2.795 1.43 6.95 0 10 .65 1.652 1.306 3.334 2 5-2.17-.553-4.223-1.575-6-2-6.502 2.795-14.96.75-16-7z"></path>
+                            </svg>                                
+                        </div>
+                        <div class="mgRight2">0</div>
+                    </div>
+				</div>
+			</div>					
+		</div>
+
+		<!--PHAN ANH DISPLAY: NONE-->
+		<style type="text/css">
+			#anh1, #anh2 {
+				display: none;
+			}
+
+			.imageBig {
+				position: fixed;
+				width: 100%;
+				height: 100%;
+				bottom: 0;
+				background-color: #ffffff;
+				z-index: 100;
+				
+			}
+
+			.mgAutoImg {
+				width: 990px;
+    			height: 600px;
+				margin: 80px 0px 0px 297px;
+				display: flex;
+			}
+
+			.childphoto {
+				width: 33px;
+			    height: 33px;
+			    display: inline-block;
+			}
+
+			.noidungGallery {
+				display: flex;
+			    width: 330px;
+			    justify-content: space-between;
+			    height: 57px;
+			    border-bottom: 1px solid #000000;
+			    margin-left: 42px;
+			}
+
+			.childphoto {
+				margin-right: 10px;			
+			}
+
+			.childphoto img {
+				width: 100%;
+			    height: 100%;
+			    border-radius: 50%;
+			    border: 1px solid rgba(23, 23, 23, 0.07);
+			}
+
+			.noidungright {
+				display: flex;
+			}
+
+			.feedback {
+			 	margin-left: 42px;
+			 	display: flex;
+			 	justify-content: space-between; 
+			}
+
+			.leftfeedback, .rightfeedback {
+				display: flex;
+			}
+
+			.iconheart {
+				margin-right: 10px;
+			}
+
+			.buttonX {
+				position: absolute; 
+			    top: 60px;
+			    right: 60px; 
+			    width: 30px;
+			    height: 30px;
+			    font-size: 45px;
+			}
+
+			.clickright {
+			    width: 24px;
+			    height: 46px;
+			    top: 50%;
+			    position: fixed;
+			    right: 60px;
+			    cursor: pointer;
+			    font-size: 45px;
+			}	
+
+			.clickleft {
+			    width: 24px;
+			    height: 46px;
+			    top: 50%;
+			    position: fixed;
+			    left: 60px;
+			    cursor: pointer;
+			    font-size: 45px;
+			}				
+		</style>
+
+		<!--JQUERY Click anh-->
+		<script type="text/javascript">
+			$(document).ready(function()
+			{
+				$('.anh01, .anh02').click(function()
+				{
+					$('#anh1').css({"display": "block"});
+				})
+
+				// $('.hoverImg').click(function()
+				// {
+				// 	$('#anh2').css({"display": "block"});
+				// })
+
+				$(".buttonX").click(function()
+				{
+					$('#anh1').css({"display": "none"});
+					$('#anh2').css({"display": "none"});
+				})
+
+				$(".clickright").click(function()
+				{
+					$('#anh1').css({"display": "none"});
+					$('#anh2').css({"display": "block"});
+				})
+
+				$(".clickleft").click(function()
+				{
+					$('#anh2').css({"display": "none"});
+					$('#anh1').css({"display": "block"});
+				})
+			})
+		</script>
+
+		<!--Code-->
+		<div id="anh1">
+			<div class="imageBig">
+				<div class="mgAutoImg">
+					<div class="anhGallery">
+						<img src="./img/anh28.jpg" width="600px"; height="600px">	
+					</div>
+
+					<div>						
+						<div class="noidungGallery">
+							<div class="noidungright">
+								<a href="" class="childphoto">
+									<img src="./img/anh30.jpg">
+								</a>
+								<div>
+									<p>energysnackstemplate</p>
+								</div>
+							</div>
+							
+							<div class="isagram">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 21 20">
+		                            <path fill="#000" fill-rule="evenodd" d="M10.5 0c2.73 0 3.072.012 4.144.06 1.07.049 1.8.218 2.44.465.66.256 1.22.597 1.78 1.153a4.9 4.9 0 0 1 1.158 1.772c.249.636.419 1.363.468 2.427.048 1.067.06 1.407.06 4.123s-.012 3.056-.06 4.123c-.05 1.064-.22 1.791-.468 2.427a4.9 4.9 0 0 1-1.159 1.772 4.93 4.93 0 0 1-1.78 1.153c-.64.247-1.37.416-2.44.465-1.071.048-1.414.06-4.143.06-2.73 0-3.072-.012-4.144-.06-1.07-.049-1.8-.218-2.44-.465a4.93 4.93 0 0 1-1.78-1.153A4.9 4.9 0 0 1 .979 16.55c-.249-.636-.419-1.363-.468-2.427C.462 13.056.45 12.716.45 10s.012-3.056.06-4.123C.56 4.813.73 4.086.978 3.45a4.9 4.9 0 0 1 1.159-1.772A4.929 4.929 0 0 1 3.917.525c.64-.247 1.37-.416 2.44-.465C7.427.012 7.77 0 10.5 0zm0 1.802c-2.683 0-3.001.01-4.061.058-.98.045-1.512.207-1.866.344-.47.182-.804.399-1.156.748-.351.35-.57.684-.752 1.15-.137.353-.3.882-.346 1.857-.048 1.055-.058 1.37-.058 4.041 0 2.67.01 2.986.058 4.04.045.976.209 1.505.346 1.858.183.466.4.8.752 1.15.352.35.687.566 1.156.748.354.137.886.3 1.866.344 1.06.048 1.377.058 4.061.058s3.001-.01 4.061-.058c.98-.045 1.512-.207 1.866-.344.47-.182.804-.399 1.156-.748.351-.35.57-.684.752-1.15.137-.353.3-.882.346-1.857.048-1.055.058-1.37.058-4.041 0-2.67-.01-2.986-.058-4.04-.045-.976-.209-1.505-.346-1.858-.183-.466-.4-.8-.752-1.15a3.115 3.115 0 0 0-1.156-.748c-.354-.137-.886-.3-1.866-.344-1.06-.048-1.378-.058-4.061-.058zm0 3.063c2.85 0 5.16 2.299 5.16 5.135s-2.31 5.135-5.16 5.135S5.34 12.836 5.34 10s2.31-5.135 5.16-5.135zm0 8.468c1.85 0 3.35-1.492 3.35-3.333 0-1.841-1.5-3.333-3.35-3.333A3.342 3.342 0 0 0 7.15 10c0 1.841 1.5 3.333 3.35 3.333zm6.57-8.671c0 .663-.54 1.2-1.205 1.2a1.203 1.203 0 0 1-1.206-1.2c0-.663.54-1.2 1.206-1.2.666 0 1.206.537 1.206 1.2z"></path>
+		                        </svg>
+							</div>
+						</div>
+
+						<div class="feedback">
+							<div class="leftfeedback">
+								<div class="iconheart">
+									<i class="far fa-heart"></i>
+									<span>2</span>	
+								</div>
+
+								<div>
+									<i class="far fa-comment"></i>
+									<span>0</span>	
+								</div>
+							</div>
+
+							<div class="rightfeedback">
+								<span>101w</span>
+							</div>
+						</div>
+					</div>					
+				</div>
+
+				<!--Click right and X-->
+				<div>
+					<div class="buttonX">
+						<i class="fas fa-times"></i>
+						<span style="background-image: url(data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org…sform%3D%22rotate%2845%2015.339%2015.339%29%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E); width: 30px; height: 30px;"></span>
+					</div>
+
+					<div class="clickright">
+						<i class="fas fa-chevron-right"></i>
+					</div>
+				</div>	
+			</div>
+		</div>
+
+		<div id="anh2">
+			<div class="imageBig">
+				<div class="mgAutoImg">
+					<div class="anhGallery">
+						<img src="./img/anh29.jpg" width="600px"; height="600px">	
+					</div>
+
+					<div>						
+						<div class="noidungGallery">
+							<div class="noidungright">
+								<a href="" class="childphoto">
+									<img src="./img/anh30.jpg">
+								</a>
+								<div>
+									<p>energysnackstemplate</p>
+								</div>
+							</div>
+							
+							<div class="isagram">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 21 20">
+		                            <path fill="#000" fill-rule="evenodd" d="M10.5 0c2.73 0 3.072.012 4.144.06 1.07.049 1.8.218 2.44.465.66.256 1.22.597 1.78 1.153a4.9 4.9 0 0 1 1.158 1.772c.249.636.419 1.363.468 2.427.048 1.067.06 1.407.06 4.123s-.012 3.056-.06 4.123c-.05 1.064-.22 1.791-.468 2.427a4.9 4.9 0 0 1-1.159 1.772 4.93 4.93 0 0 1-1.78 1.153c-.64.247-1.37.416-2.44.465-1.071.048-1.414.06-4.143.06-2.73 0-3.072-.012-4.144-.06-1.07-.049-1.8-.218-2.44-.465a4.93 4.93 0 0 1-1.78-1.153A4.9 4.9 0 0 1 .979 16.55c-.249-.636-.419-1.363-.468-2.427C.462 13.056.45 12.716.45 10s.012-3.056.06-4.123C.56 4.813.73 4.086.978 3.45a4.9 4.9 0 0 1 1.159-1.772A4.929 4.929 0 0 1 3.917.525c.64-.247 1.37-.416 2.44-.465C7.427.012 7.77 0 10.5 0zm0 1.802c-2.683 0-3.001.01-4.061.058-.98.045-1.512.207-1.866.344-.47.182-.804.399-1.156.748-.351.35-.57.684-.752 1.15-.137.353-.3.882-.346 1.857-.048 1.055-.058 1.37-.058 4.041 0 2.67.01 2.986.058 4.04.045.976.209 1.505.346 1.858.183.466.4.8.752 1.15.352.35.687.566 1.156.748.354.137.886.3 1.866.344 1.06.048 1.377.058 4.061.058s3.001-.01 4.061-.058c.98-.045 1.512-.207 1.866-.344.47-.182.804-.399 1.156-.748.351-.35.57-.684.752-1.15.137-.353.3-.882.346-1.857.048-1.055.058-1.37.058-4.041 0-2.67-.01-2.986-.058-4.04-.045-.976-.209-1.505-.346-1.858-.183-.466-.4-.8-.752-1.15a3.115 3.115 0 0 0-1.156-.748c-.354-.137-.886-.3-1.866-.344-1.06-.048-1.378-.058-4.061-.058zm0 3.063c2.85 0 5.16 2.299 5.16 5.135s-2.31 5.135-5.16 5.135S5.34 12.836 5.34 10s2.31-5.135 5.16-5.135zm0 8.468c1.85 0 3.35-1.492 3.35-3.333 0-1.841-1.5-3.333-3.35-3.333A3.342 3.342 0 0 0 7.15 10c0 1.841 1.5 3.333 3.35 3.333zm6.57-8.671c0 .663-.54 1.2-1.205 1.2a1.203 1.203 0 0 1-1.206-1.2c0-.663.54-1.2 1.206-1.2.666 0 1.206.537 1.206 1.2z"></path>
+		                        </svg>
+							</div>
+						</div>
+
+						<div class="feedback">
+							<div class="leftfeedback">
+								<div class="iconheart">
+									<i class="far fa-heart"></i>
+									<span>2</span>	
+								</div>
+
+								<div>
+									<i class="far fa-comment"></i>
+									<span>0</span>	
+								</div>
+							</div>
+
+							<div class="rightfeedback">
+								<span>101w</span>
+							</div>
+						</div>
+					</div>					
+				</div>
+
+				<div>
+					<div class="buttonX">
+						<i class="fas fa-times"></i>
+						<span style="background-image: url(data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org…sform%3D%22rotate%2845%2015.339%2015.339%29%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E); width: 30px; height: 30px;"></span>
+					</div>
+
+					<div class="clickright">
+						<i class="fas fa-chevron-right"></i>
+					</div>
+
+					<div class="clickleft">
+						<i class="fas fa-chevron-left"></i>
+					</div>
+				</div>	
+			</div>
+		</div>
+
+
+	</div>
+
+<!--PHAN 7-->
+	<div id="footter">
+		<div class="icon">
+			<p>Follow us on:</p>
+			<div>
+				<img src="./img/anh36.webp">
+				<img src="./img/anh37.webp">
+				<img src="./img/anh38.webp">
+			</div>
+		</div>
+
+		<div class="sub">
+			<p class="subThep">Subscribe to our newsletter  </p>
+			<div>
+				<input type="text" name="" aria-label="Email Address" placeholder="Email Address" class="inputFootter">
+				<button>Subscribe Now</button>
+			</div>
+			<p class="bottomThep">© 2023 by Go Bar. Proudly created with Wix.com</p>
+		</div>
+
+		<div class="contact">
+			<p class="subThep">Contact Us:</p>
+			<span>123-456-7890  |  info@mysite.com</span>
+		</div>
+	</div>
+
+<!--CHAT-->
+<div class="chat">
+	
+	<div id="hienThanhChat">
+		<div class="anChat">
+			<div class="letChat">
+				<p>Let's Chat!</p>
+			</div>
+
+			<div class="iconChat">
+				<div class="an">
+					<svg viewBox="0 0 14 8" fill="currentColor" width="14px" height="8px"> <!--Như một chiếc cửa sổ, kích thước của viewport xác định có thể nhìn thấy được bao nhiều, Vd: Tấm ảnh 100px 100px nhưng thiết lập viewport 50px 50px "hình O =>> 1 phần tư hình O"-->
+						<g id="Page-1" stroke="none" fill="none" stroke-width="1" fill-rule="evenodd">
+							<g id="3" transform="translate(-343 -81)" fill="currentColor">
+								<path id="drop" d="M355.895556 81L350 86.8195777 344.104444 81 343 82.0886756 350 89 357 82.0886756z"></path>
+							</g>
+						</g>
+					</svg>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="anThanhChat">
+		<div class="hienChat">
+			<div class="bgLet">
+				<div class="letChat2">
+					<p>Let's Chat</p>
+					<p>
+						Hi there. I'm available to answer<br> 
+						your questions.
+					</p>
+				</div>
+
+				<div class="choChat">
+
+					<svg viewBox="0 0 14 8" fill="currentColor" width="14px" height="8px" >
+						<g id="Page-1" stroke="none" fill="none" stroke-width="1" fill-rule="evenodd">
+							<g id="3" transform="translate(-343 -81)" fill="currentColor">
+								<path id="drop" d="M355.895556 81L350 86.8195777 344.104444 81 343 82.0886756 350 89 357 82.0886756z"></path>
+							</g>
+						</g>
+					</svg>
+				</div>
+
+				<div class="hienLetChat">Let's Chat</div>	
+			</div>
+			
+			<div class="powered">
+				<div class="powBy">
+					Powered by
+				</div>
+
+				<div class="subIdIcon">
+					<div class="titleIcon">
+						<span id="iconMatNguoi"  class="getIcon" style="border-bottom: 3px solid #000000;">😃</span>
+						<span id="iconGau" class="getIcon" >🐻</span>
+						<span id="iconBanh" class="getIcon" >🍔</span>
+						<span id="iconBong" class="getIcon" >⚽</span>
+						<span id="iconOTo" class="getIcon" >🌇</span>
+						<span id="iconBongDen" class="getIcon" >💡</span>
+						<span id="iconKiTu" class="getIcon" >🔣</span>
+					</div>
+
+					<script type="text/javascript">
+						$(document).ready(function()
+							{
+								$(".getIcon").click(function()
+									{
+										// keyword: Select all except classes
+										$(".getIcon:not(#"+this.id+")").css({"border-bottom": "none"});
+										$(this).css({"border-bottom": "3px solid #000000"});
+									});
+								// $('.getIcon').click(function(){
+								//      $('.getIcon').not(this).each(function(){
+								//      $(this).css({"border-bottom": "none"});
+								//      });
+								//          $(this).css({"border-bottom": "3px solid #000000"});
+								// })
+							});
+					</script>
+
+					<script type="text/javascript">
+					// Hien thi khi Load trang, handle onload
+						$(document).ready(function() 
+						{
+							// let arrMatNguoi = range(128512, 128580);
+							arr = [...range(128512, 128586),...range(128101, 128139),...range(128066 ,128100),...range(127746,127750)];
+							let str = "";
+
+							for(let i = 0; i < arr.length; i++)
+							{
+								str += '<span class="emoji">&#'+ arr[i] + ';</span>';
+							}
+
+							$(".widthSubIcon").html(str);
+
+						});
+
+						// Tao mang[a,b] trong khoảng tu a->b 
+						function range(start, end) 
+						{
+							let arr = [];
+
+							for(let i = start; i<=end; i++)
+							{
+								arr.push(i);
+								// Them 1 thành phần vào arr
+							}
+							return arr;
+						}
+
+						// Hien thi Icon khi Click, handle clik
+						// SPREAD OPERATOR ES6
+						$(".getIcon").click(function()
+						{
+							let arr = [];
+							if(this.id == "iconMatNguoi")
+							{
+								arr = [...range(128512, 128586),...range(128101, 128139),...range(128066 ,128100),...range(127746,127750)];
+								// console.log(arr);
+							} 
+							else if(this.id == "iconGau") {
+								let arrBanh = [...range(128000, 128060),...range(127748, 127776),...range(127793, 127797),...range(128165,128168),...range(129409, 129431)];
+								arr = arrBanh;
+							} 
+							else if(this.id == "iconBanh") {
+								let arrBanh = [...range(127813, 127872)];
+								arr = arrBanh;
+							} 
+							else if(this.id == "iconBong") {
+								let arrBanh = [...range(127911, 127955)];
+								arr = arrBanh;
+							} 
+							else if(this.id == "iconOTo") {
+								let arrBanh = [...range(128640, 128678)];
+								arr = arrBanh;
+							} 
+							else if(this.id == "iconBongDen") {
+								let arrBanh = [...range(8986, 8987),...range(9200, 9203),...range(128179, 128253),...range(128269, 128276)];
+								arr = arrBanh;
+							}
+							else if(this.id == "iconKiTu") {
+								let arrBanh = [...range(128336, 128359),...range(9800,9803),...range(128147, 128159)];
+								arr = arrBanh;
+							}
+
+							let str = "";
+							for(let i = 0; i < arr.length; i++)
+							{
+								str += '<span class="emoji">&#'+ arr[i] + ';</span>';
+							}
+
+							$(".widthSubIcon").html(str);
+						});
+					</script>
+
+					<div class="subIcon" style="overflow: auto; height: 110px;">
+						<div class="widthSubIcon">
+				
+						</div>
+					</div>						
+				</div>
+			</div>
+
+			<div class="chatIcon">
+				<div class="widthIcon">
+					<div class="matcuoi">
+						<svg viewBox="0 0 20 20" fill="currentColor" width="20px" height="20px" style="cursor: pointer;"><g id="Layer_2"><path d="M10,0a10,10,0,1,0,9.85,8.26A10,10,0,0,0,10,0Zm0,19A9,9,0,1,1,18.87,8.44,9.11,9.11,0,0,1,19,10,9,9,0,0,1,10,19Zm4.23-6.88a4.5,4.5,0,0,1-8.72,0l1-.25a3.5,3.5,0,0,0,6.78,0ZM8,8A1,1,0,1,1,7,7,1,1,0,0,1,8,8Zm6,0a1,1,0,1,1-1-1A1,1,0,0,1,14,8Z" id="Layer_1-2"></path></g></svg>
+					</div>
+
+					<div class="downIcon">							
+						<svg viewBox="0 0 20 20" fill="currentColor" width="20px" height="20px"><g id="Layer_2"><path d="M10,0a10,10,0,1,0,9.85,8.26A10,10,0,0,0,10,0Zm0,19A9,9,0,1,1,18.87,8.44,9.11,9.11,0,0,1,19,10,9,9,0,0,1,10,19Zm-.05-5.1L5,8.95H6.41l3.54,3.54,3.54-3.54H14.9Z" id="Layer_1-2"></path></g></svg>
+					</div>
+
+					<textarea aria-label="Type your message. Hit enter to submit." data-hook="input" class="_2Tg2y" placeholder="Type your message…" role="textbox" style="resize: none; color: rgb(0, 0, 0); box-shadow: none;height: 32px; overflow: hidden; border: none; width: 251px;"></textarea>
+
+					<div class="upLoadAnh">
+						<svg viewBox="0 0 9 23" fill="currentColor" width="9px" height="23px" style="transform: rotate(-315deg); cursor: pointer;"><g id="Layer_2"><path d="M4.5,23A4.5,4.5,0,0,1,0,18.5V4.5a4.5,4.5,0,0,1,9,0H8a3.5,3.5,0,0,0-7,0v14a3.5,3.5,0,0,0,7,0v-9a1.5,1.5,0,0,0-3,0V17H4V9.5a2.5,2.5,0,0,1,5,0v9A4.5,4.5,0,0,1,4.5,23Z" id="Layer_1-2"></path></g></svg>
+						<input type="file" name="chonFile" style="display: none;">
+					</div>
+					<!--CHon FIle-->
+
+					<script type="text/javascript">
+						$(document).ready(function()
+							{
+								$(".upLoadAnh svg").click(function () {
+								  $("input[type='file']").trigger('click');
+								  // alert('clicked');
+								});
+
+								$('input[type="file"]').on('change', function() {
+									// alert('change');
+								  var val = $(this).val();
+								  $(this).siblings('span').text(val);
+						})
+							});						
+					</script>
+				</div>	
+			</div>	
+		</div>
+	</div>
+</div>
+
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			//HIEU UNG MUI TEN BAM LEN XUONG
+			$(".iconChat").click(function()
+				{
+					$("#hienThanhChat").css({"display":"none"});
+					$("#anThanhChat").css({"display":"block"});
+					$(".hienChat").css({"animation-name": "abc","animation-duration": "0.4s"});
+					$(".letChat2").css({"display":"block"});
+					$(".hienLetChat").css({"display":"none"});
+					$(".subIdIcon").css({"display" : "none"});	
+					$(".powered").css({"height": "36px","margin-top": "386px"});
+					$(".matcuoi").css({"display": "block"});
+					$(".downIcon").css({"display": "none"});		
+				});
+
+			$(".choChat").click(function()
+				{
+					$(".hienChat").css({"animation-name": "def","animation-duration": "0.4s"});
+
+					setTimeout(function(){
+						$("#anThanhChat").css({"display":"none"});
+					},400);
+						$("#hienThanhChat").css({"display":"block"});
+				});	
+
+			//HIEU UNG LET"S CHAT
+				
+			$(".letChat2").click(function()
+				{
+					$(".letChat2").slideUp(300);
+					$(".hienLetChat").css({"display" : "block"});
+				});	
+
+			$(".hienLetChat").click(function()
+				{
+					$(".letChat2").slideDown(300);
+					$(".hienLetChat").css({"display" : "none"});
+					$(".subIdIcon").css({"display" : "none"});
+					$(".powered").css({"height": "36px","margin-top": "386px"});
+					$(".downIcon").css({"display": "none"});
+					$(".matcuoi").css({"display": "block"});
+				});
+
+			//TAG TEXTAREA
+			$("._2Tg2y").focus(function()
+				{
+					$(this).css({"outline": "none"}); // outline bo border khi click vao
+				});
+
+			//SUB ID ICON
+			$(".matcuoi").click(function()
+				{
+					$(".subIdIcon").css({"display" : "block","background-color": "white"});
+					$(".powered").css({"height": "179px","margin-top": "243px"});
+					$(".letChat2").slideUp(300);
+					$(".hienLetChat").css({"display" : "block"});
+					$(".downIcon").css({"display": "block"});
+					$(".matcuoi").css({"display": "none"});
+				});
+
+			$(".downIcon").click(function()
+				{
+					$(".downIcon").css({"display": "none"});
+					$(".matcuoi").css({"display": "block"});
+					$(".subIdIcon").css({"display" : "none"});
+					$(".powered").css({"height": "36px","margin-top": "386px"});
+				});		
+		});
+	</script>	
+
+	<style type="text/css">
+		@keyframes abc {
+			from {
+				transform: translate3d(0,100%,0);
+			}
+
+			to {
+				transform: translate3d(0,0,0);
+			}
+		}
+
+		@keyframes def {
+			from {
+				transform: translate3d(0,0,0);
+			}
+
+			to {
+				transform: translate3d(0,90%,0);
+			}
+		}
+	</style>
+</body>
+</html>

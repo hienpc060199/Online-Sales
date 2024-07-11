@@ -1,0 +1,933 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial,Helvetica,sans-serif;
+}
+
+/*PHAN 1*/
+
+#container {
+	background-color: white;
+	color: black;
+	position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.gobars {
+	width: 1420px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 21px;
+    margin-bottom: 21px;
+}
+
+.title {
+	font-size: 25px;
+	font-family: "futura-lt-w01-book";
+}
+
+.title a:hover {
+	color: #666666;
+	transition: 0.4s;
+	text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    font-size: 14px;
+    font-family: "futura-lt-w01-book";
+    align-items: center;
+}
+
+.mgright {
+	margin-right: 60px;
+}
+
+.mggh {
+	margin-right: 20px;
+}
+
+.shop, .about, .whereToBuy , .gh, .title a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.menu a:hover {
+	text-decoration: none;
+	color: #F2D5CE;
+	transition: 0.4s;
+}
+
+.giua {
+	text-align: center;
+	color: white;
+	padding-top: 15px;
+}
+
+.background {
+	background-color: #000000;
+}
+
+.home {
+	color: #F2D5CE;
+}
+
+.gh {
+	width: 20px;
+}
+
+._1INsc._3KKRv {
+	fill:#968575
+}
+
+._1INsc {
+	fill:#FFFFFF;
+	font:normal normal normal 14px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
+	font-size:50px;
+}
+/*PHAN 2*/
+
+#anh {
+	position: relative;
+	background-color: #f4ebe2;
+	z-index: 0;
+}
+
+.img img {
+	width: 100%;
+	padding-top: 134px;
+	z-index: 1;
+}
+
+.shopnow {
+	position: absolute;
+    top: 354px;
+    left: 301.5px;
+}
+
+.eat h2 {
+	font: normal normal normal 45px/1.4em futura-lt-w01-book,sans-serif;/*font-style 
+																		  font-variant
+																		  font-weight
+																		  font-size/line-height
+																		  font-family
+																		*/ 
+	font-family: "futura-lt-w01-book";
+}
+
+.button a {
+	width: 150px; 
+    height: 45px;
+    display: flex;
+    border: 1px solid #000000;
+    align-items: center;
+    justify-content: center;
+	color: #000000;
+	text-decoration: none;
+	font-family: "avenir-lt-w01_35-light1475496";
+}
+
+.button a:hover {
+	color: white;
+	text-decoration: none;
+	transition: 0.4s;
+	background-color: #000000;
+}
+
+.thanhngang {
+	width: 20px;
+	height: 3px;
+	background-color: #000000;
+	margin-bottom: 24px;
+}
+
+.noidung {
+	font: normal normal normal 14px/1.4em avenir-lt-w01_35-light1475496,sans-serif;/*font-style 
+																					  font-variant
+																					  font-weight
+																					  font-size/line-height
+																					  font-family
+																					*/
+}
+
+.noidung p {
+	font-size: 13px;
+	margin-bottom: 30px;
+	font-family: "avenir-lt-w01_35-light1475496";
+}
+
+/*PHAN 3*/
+
+#slide2 {
+	text-align: center;
+	padding-top: 50px;
+}
+
+.our h5 {
+	margin-top: 15px;
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-family: "futura-lt-w01-book";
+}
+
+#li1, #li2, #li3, #li4, #li5, #li6, #li7, #li8, #li9, #li10, #li11, #li12 {
+	font-size: 13px;
+	position: relative;
+}
+
+.hover {
+	display: none;
+	width: 300px;
+	top: 308px;
+    position: absolute;
+    left: 57px;
+    padding-bottom: 15px;
+    padding-top: 20px;
+    background: rgba(255, 255, 255, 0.75);
+}
+
+/*#li1:hover .hover {
+    display: block;
+    animation-name: slideshow;
+	animation-duration: 5s;
+}#li3:hover .hover {
+	display: block;
+	animation-name: slideshow;
+	animation-duration: 5s;
+}#li5:hover .hover {
+	display: block;
+	animation-name: slideshow;
+	animation-duration: 5s;
+}#li7:hover .hover {
+	display: block;
+	animation-name: slideshow;
+	animation-duration: 5s;
+}#li9:hover .hover {
+	display: block;
+	animation-name: slideshow;
+	animation-duration: 5s;
+}#li11:hover .hover {
+	display: block;
+	animation-name: slideshow;
+	animation-duration: 5s;
+}#li13:hover .hover {
+	display: block;
+	animation-name: slideshow;
+	animation-duration: 5s;
+}#li15:hover .hover {
+	display: block;
+	animation-name: slideshow;
+	animation-duration: 5s;
+}#li17:hover .hover {
+	display: block;
+	animation-name: slideshow;
+	animation-duration: 5s;
+}#li19:hover .hover {
+	display: block;
+	animation-name: slideshow;
+	animation-duration: 5s;
+}#li21:hover .hover {
+	display: block;
+	animation-name: slideshow;
+	animation-duration: 5s;
+}#li23:hover .hover {
+	display: block;
+	animation-name: slideshow;
+	animation-duration: 5s;
+}*/
+
+@keyframes slideshow {
+			from {
+				transform: translate3d(0,30%,0);
+			}
+
+			to {
+				transform: translate3d(0,0,0);
+			}
+		}
+
+.thep {
+	/*font-size: 13px;*/
+	padding-top: 5px;
+}
+
+.thep p {
+	line-height: 23px;
+	font-size: 14px;
+    font-family: "avenir-lt-w01_35-light1475496";
+}
+
+#flexiselDemo1 {
+	display:none;
+	background-color: white;
+	padding: 10px;
+}
+
+#flexiselDemo1 span {
+	font-family: "avenir-lt-w01_35-light1475496";
+}
+
+#flexiselDemo1 p {
+	margin-bottom: 20px;
+    font-size: 14px;
+    font-family: "avenir-lt-w01_35-light1475496";
+}
+
+.nbs-flexisel-container {
+    position:relative;
+    max-width:100%;
+}
+
+.nbs-flexisel-ul {
+    position:relative;
+    width:99999px;
+    margin:0px;
+    padding:0px;
+    list-style-type:none;   
+    text-align:center;  
+    overflow: auto;
+}
+
+.nbs-flexisel-inner {
+    position: relative;
+    overflow: hidden;
+    float:left;
+    width:100%;
+    background:#fcfcfc;
+    background: #fcfcfc -moz-linear-gradient(top, #fcfcfc 0%, #eee 100%); /* FF3.6+ */
+    background: #fcfcfc -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfcfc), color-stop(100%,#eee)); /* Chrome,Safari4+ */
+    background: #fcfcfc -webkit-linear-gradient(top, #fcfcfc 0%, #eee 100%); /* Chrome10+,Safari5.1+ */
+    background: #fcfcfc -o-linear-gradient(top, #fcfcfc 0%, #eee 100%); /* Opera11.10+ */
+    background: #fcfcfc -ms-linear-gradient(top, #fcfcfc 0%, #eee 100%); /* IE10+ */
+    background: #fcfcfc linear-gradient(top, #fcfcfc 0%, #eee 100%); /* W3C */
+    /*border:1px solid #ccc;*/
+    /*border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;  */
+}
+
+
+.nbs-flexisel-item {
+    float:left;
+    margin:0px;
+    padding:0px;
+    cursor:pointer;
+    position:relative;
+    line-height:0px;
+}
+
+.nbs-flexisel-item img {
+    max-width: 100%;
+    cursor: pointer;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: auto;
+}
+
+.nbs-flexisel-nav-left,
+.nbs-flexisel-nav-right {
+    padding:5px 10px;
+    border-radius:15px;
+    /*-moz-border-radius:15px;
+    -webkit-border-radius:15px;  */    
+    position: absolute;
+    cursor: pointer;
+    z-index: 4;
+    top: 50%;
+    transform: translateY(-50%);   
+    background: rgba(0,0,0,0.5);
+    color: #fff;     
+}
+
+.nbs-flexisel-nav-left {
+    left: 10px;
+}
+
+.nbs-flexisel-nav-left:before {
+    content: "<"
+}
+
+/*.nbs-flexisel-nav-left.disabled {
+    opacity: 0.4;
+}*/
+
+.nbs-flexisel-nav-right {
+    right: 5px;    
+}
+
+.nbs-flexisel-nav-right:before {
+    content: ">"
+}
+
+/*.nbs-flexisel-nav-right.disabled {
+    opacity: 0.4;
+}*/
+
+.clearout {
+	height:20px;
+	clear:both;
+}
+
+.subLi img {
+	width: 346px;
+	height: 346px;
+}
+
+.asubli {
+	text-decoration: none !important;
+	color: #212529 !important;
+} 
+
+/*.asubli p, .asubli span {
+	color: #212529;
+	text-decoration: none;
+}*/
+
+/*PHAN 4*/
+
+#content {
+	padding-top: 190px;
+	width: 1080px;
+    margin: 0 auto;
+}
+
+.cuc1 {
+	display: flex;
+}
+
+.oder {
+	background-color: rgba(244, 235, 226, 1);
+	width: 540px;
+}
+
+.bgoder2 {
+	background-color: rgba(242, 213, 206, 1);
+}
+
+.oder2 {
+	background-color: rgba(244, 235, 226, 1);
+	width: 540px;
+}
+
+.oderright {
+	margin-left: 85px;
+    margin-top: 100px;
+}
+
+.oderleft {
+	margin-left: 85px;
+    margin-top: 100px;
+}
+
+.eat h4, .eat2 h4 {
+	margin-bottom: 35px;
+    font-size: 45px;
+    font-family: "futura-lt-w01-book";
+}
+
+.eat h5, .eat2 h5 {
+	font-size: 25px;
+    font-family: "futura-lt-w01-book";
+}
+
+/*PHAN 5*/
+#sign {
+	background-color: #f4ebe2;
+	z-index: 0;
+	margin-top: 200px;
+	position: relative;
+}
+
+.imgsign {
+	z-index: 1;
+}
+
+.signup {
+    position: absolute;
+    top: 60px;
+    left: 525px;
+    text-align: center;
+}
+
+.mid {
+	margin-left: 200px;
+}
+
+/*PHAN 6*/
+
+.gobar {
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.slideanh img {
+	height: 386px;
+    width: 386px;
+    margin-bottom: 14px;
+}
+
+.margintop, .marginbottom {
+	display: flex;
+	justify-content: space-between;
+}
+
+.hoverAnh {	
+    display: none;
+    margin-top: 2px;
+}
+
+.hoverImg:hover .hoverAnh{
+    background: rgba(0, 0, 0, 0.5);
+    transition-duration: 0.1s;
+    color: #ffffff;
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 386px;
+}
+
+.hoverImg {
+	position: relative;
+}
+
+.mgRightSvg {
+	margin-right: 4px;
+}
+
+.mgRight2 {
+	padding-right: 21px;
+	font-size: 20px;
+}
+
+/*Phan 7*/
+#footter {
+	width: 980px;
+	margin: 0 auto;
+	padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+.sub input {
+	width: 253.25px;
+    height: 41.91px;
+    margin-right: 7px;
+    padding: 8px;
+    font-family: "avenir-lt-w01_35-light1475496";
+    font-size: 15px;
+}
+
+.sub button {
+	height: 41.91px;
+	background-color: #000000;
+	color: white;
+	padding: 9px 24px;
+	border: 0px;
+}
+
+.icon, .contact {
+    margin-top: 20px;
+}
+
+.icon p {
+	font-family: "avenir-lt-w01_85-heavy1475544";
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.sub p {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.subThep {
+	font-family: "avenir-lt-w01_85-heavy1475544";
+	 font-weight: 700;
+    font-size: 14px;
+    text-align: right;
+}
+
+.bottomThep {
+	font-size: 13px;
+	font-family: "avenir-lt-w01_35-light1475496";
+}
+
+.contact span {
+    font-size: 14px;
+    font-family: "avenir-lt-w01_35-light1475496";
+}
+
+.inputFootter {
+	outline: none;
+}
+
+/*HIEN SHOP*/
+ #hienShop {
+    padding-top: 300px;
+    text-align: center;
+ }
+
+ .centerThanhNgang {
+ 	display: flex;
+ 	justify-content: center;
+ }
+
+ .showsp {
+ 	width: 1420px;
+    margin: 0 auto;
+ 	margin-top: 100px;
+ }
+
+ .showsp ul {
+ 	list-style: none;
+ }
+
+ .showsp li {
+ 	margin: 25px;
+ }
+
+.showsp p {
+	margin-bottom: 0px;
+    font-size: 16px;
+    font-family: "avenir-lt-w01_35-light1475496";
+}
+
+.showsp span {
+    font-family: "avenir-lt-w01_35-light1475496";
+}
+
+.showanh {
+	display: flex;
+	justify-content: space-between;
+} 
+
+.leftImg {
+	padding-left: 0px !important;
+}
+
+.titleShop h2 {
+	font: normal normal normal 45px/1.4em futura-lt-w01-book,sans-serif; /*font-style 
+																		  font-variant
+																		  font-weight
+																		  font-size/line-height
+																		  font-family
+																		 */
+	font-family: "futura-lt-w01-book";
+}
+
+.titleShop p {
+	font: normal normal normal 14px/1.4em avenir-lt-w01_35-light1475496,sans-serif; /*font-style 
+																					  font-variant
+																					  font-weight
+																					  font-size/line-height
+																					  font-family
+																					*/
+	font-family: "avenir-lt-w01_35-light1475496";
+}
+
+.thanhngang3 {
+	width: 20px;
+	height: 3px;
+	background-color: #000000;
+	margin-bottom: 24px;
+}
+
+#li39, #li41, #li43, #li45, #li47, #li49, #li53, #li55, #li57, #li59, #li61, #li51 {
+	font-size: 13px;
+	position: relative;
+}
+
+.hover2 {
+	display: none;
+	position: absolute;
+	top: 250px;
+    left: 1px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.75);
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-size: 14px;
+}
+
+.hover3 {
+	/*left: 119px;*/
+}
+
+#li39:hover .hover2 {
+	display: block;
+	animation-name: slideshow;
+	animation-duration: 0.1s;
+}#li41:hover .hover2 {
+	display: block;
+	animation-name: slideshow;
+	animation-duration: 0.1s;
+}#li43:hover .hover2 {
+	display: block;
+	animation-name: slideshow;
+	animation-duration: 0.1s;
+}#li45:hover .hover2 {
+	display: block;
+	animation-name: slideshow;
+	animation-duration: 0.1s;
+}#li47:hover .hover2 {
+	display: block;
+	animation-name: slideshow;
+	animation-duration: 0.1s;
+}#li49:hover .hover2 {
+	display: block;
+	animation-name: slideshow;
+	animation-duration: 0.1s;
+}#li51:hover .hover2 {
+	display: block;
+	animation-name: slideshow;
+	animation-duration: 0.1s;
+}#li53:hover .hover2 {
+	display: block;
+	animation-name: slideshow;
+	animation-duration: 0.1s;
+}#li55:hover .hover2 {
+	display: block;
+	animation-name: slideshow;
+	animation-duration: 0.1s;
+}#li57:hover .hover2 {
+	display: block;
+	animation-name: slideshow;
+	animation-duration: 0.1s;
+}#li59:hover .hover2 {
+	display: block;
+	animation-name: slideshow;
+	animation-duration: 0.1s;
+}#li61:hover .hover2 {
+	display: block;
+	animation-name: slideshow;
+	animation-duration: 0.1s;
+}
+
+/*ABOUT*/
+#about {
+    background-color: #f4ebe2;
+	/*display: none;*/
+}
+
+.aboutAnh img {
+	width: 100%;
+}
+
+.shopnow2 {
+    position: relative;
+    top: 100%;
+    padding-left: 301.5px;
+    display: flex;
+    padding-top: 150px;
+    padding-bottom: 125px;
+}
+
+.aboutThep {
+	margin-left: 313px;
+}
+
+.aboutThep p {
+	font: normal normal normal 14px/1.4em avenir-lt-w01_35-light1475496,sans-serif; /*font-style 
+																					  font-variant
+																					  font-weight
+																					  font-size/line-height
+																					  font-family
+																					*/
+    line-height: 1.5em;
+    font-family: "avenir-lt-w01_35-light1475496";
+    margin-bottom: 21px;
+}
+
+/*CHAT*/
+
+.anChat {
+	background-color: black;
+	display: flex;
+    width: 336px;
+    height: 60px;
+    align-items: center;
+    text-align: right;
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+}
+
+.letChat {
+	margin-left: 30px;
+    margin-right: 180px;
+}
+
+.letChat p {
+	color: white;
+    margin: 0;
+}
+
+.iconChat {
+	cursor: pointer;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+}
+
+.iconChat svg {
+	margin-right: 8px;
+    transform: rotate(180deg);
+}
+
+.iconChat:hover {
+	border-radius: 50%;
+    background-color: currentColor;
+}
+
+
+#drop {
+	color: white;
+}
+
+.hienChat {
+	background-color: #e0e0e0;
+    width: 336px;
+    height: 539px;
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+}
+
+.choChat {
+	position: absolute;
+    top: 17px;
+    right: 20px;
+    cursor: pointer;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+}
+
+#anThanhChat {
+	display: none;
+}
+
+.letChat2 {
+	color: white;
+    padding-top: 100px;
+    text-align: center;
+    background: black;
+    padding-bottom: 100px;
+}
+
+.hienLetChat {
+	position: absolute;
+    top: 17px;
+    color: white;
+    left: 20px;
+    display: none;
+}
+
+.bgLet {
+	background: black;
+    height: 60px;
+}
+
+.powered {
+	margin-top: 386px;
+    color: white;
+    height: 36px;
+   /* text-align: center;*/
+    background-color: #bbbbbb;
+    line-height: 36px;
+}
+
+.chatIcon {
+	height: 57px;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.widthIcon {
+    width: 296px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 57px;
+}
+
+/*.widthSubIcon:hover span {
+	font-size: 24px;
+}
+*/
+
+/*SUB ID ICON*/
+
+.powBy {
+	text-align: center;
+}
+
+.titleIcon {
+	display: flex;
+    justify-content: space-around;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.subIdIcon {
+	display: none;
+}
+
+.widthSubIcon {
+	font-size: 23px;
+	padding: 9px 0 9px 11px;
+}
+
+.widthSubIcon span {
+	margin-right: 9px;
+}
+
+.downIcon {
+	display: none;
+}
+
+.subIcon>div>.emoji {
+	display: inline-block;
+}
+
+.subIcon>div>.emoji:hover {
+	transform: scale(1.2);
+}
+
+.emoji 	{
+	cursor: pointer;
+}
+
+/*KIEU CHU*/
+
+@font-face {
+	font-family: "futura-lt-w01-book";
+	src: url('kieuchu1.woff2');
+}
+
+/*@font-face {
+	font-family: "kieuchu2";
+	src: url('kieuchu2.woff');
+}*/
+
+@font-face {
+	font-family: "avenir-lt-w01_35-light1475496";
+	src: url('kieuchu3.woff2');
+}
+
+@font-face {
+	font-family: "avenir-lt-w01_85-heavy1475544";
+	src: url('kieuchu4.woff2');
+}
+
